@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Portfolio - Hiba</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Chart.js pour le diagramme circulaire -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    
+    <!-- Lien CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- React & ReactDOM -->
+    <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.development.js"></script>
+    
+    <!-- Babel pour JSX -->
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- EN-TÊTE -->
+        <header class="header">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <div class="profile-placeholder">
+                        <img src="assets\Snapchat-1359398791.jpg" alt="Photo de profile" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Hiba <span class="highlight">Regragui</span></h1>
+                    <h2>Étudiante en Licence 2 Informatique</h2>
+                    <p class="profile-bio">Faculté des Sciences - Université Cadi Ayyad</p>
+                    <div class="contact-info">
+                        <a href="mailto:hiba@example.com" class="contact-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>regraguihiba5@gmail.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/hiba" target="_blank" class="contact-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/hibaregragui" target="_blank" class="contact-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- À PROPOS -->
+        <section class="section about-section">
+            <div class="section-header">
+                <h2 class="section-title">À propos</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <p>Etudiante en deuxième année de Licence Informatique à la Faculté des Sciences de l'Université Cadi Ayyad. Passionnée par les technologies numériques, je développe progressivement mes compétences à travers des projets académiques et personnels en développement web, programmation et modélisation logicielle.</p>
+                <p>Mon parcours m'a permis d'acquérir une base solide en conception d'applications, bases de données et développement logiciel. Curieuse et créative, je m'intéresse particulièrement à l'innovation technologique, au design et aux applications intelligentes.</p>
+                <p>En parallèle, mes centres d'intérêt incluent le sport, le dessin, la photographie et la musique, qui nourrissent ma créativité et ma rigueur. Mon objectif professionnel est de devenir développeuse et de contribuer à la conception d'applications innovantes, notamment dans le domaine de l'intelligence artificielle.</p>
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section class="section skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Compétences</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <!-- Compétences techniques -->
+            <div class="technical-skills">
+                <h3 class="skills-subtitle"><i class="fas fa-chart-pie"></i> Compétences techniques</h3>
+                <div class="pie-chart-container">
+                    <div class="chart-wrapper">
+                        <canvas id="skillsPieChart" width="400" height="400"></canvas>
+                    </div>
+                    <div class="chart-legend" id="pieLegend"></div>
+                </div>
+            </div>
+
+            <!-- Compétences personnelles -->
+            <div class="personal-skills">
+                <h3 class="skills-subtitle"><i class="fas fa-heart"></i> Compétences personnelles</h3>
+                <div class="personal-grid">
+                    <div class="personal-col">
+                        <div class="skill-card" data-skill="orga">
+                            <div class="skill-info">
+                                <span class="skill-name">Organisation</span>
+                                <span class="skill-level-text">Avancé</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="team">
+                            <div class="skill-info">
+                                <span class="skill-name">Travail en équipe</span>
+                                <span class="skill-level-text">Très bon</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="problem">
+                            <div class="skill-info">
+                                <span class="skill-name">Résolution de problèmes</span>
+                                <span class="skill-level-text">Très bon</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="personal-col">
+                        <div class="skill-card" data-skill="crea">
+                            <div class="skill-info">
+                                <span class="skill-name">Créativité</span>
+                                <span class="skill-level-text">Avancé</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="com">
+                            <div class="skill-info">
+                                <span class="skill-name">Communication</span>
+                                <span class="skill-level-text">Bon</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card" data-skill="adapt">
+                            <div class="skill-info">
+                                <span class="skill-name">Adaptabilité</span>
+                                <span class="skill-level-text">Très bon</span>
+                            </div>
+                            <div class="skill-bar-container">
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMATION -->
+        <section class="section education-section">
+            <div class="section-header">
+                <h2 class="section-title">Formation</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - Présent</div>
+                    <div class="timeline-content">
+                        <h3>Licence Informatique</h3>
+                        <p class="timeline-subtitle">Faculté des Sciences - Université Cadi Ayyad</p>
+                        <p>Formation axée sur la programmation, les structures de données, les bases de données, la modélisation logicielle et le développement d'applications.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>Première année Licence Informatique</h3>
+                        <p>Acquisition des fondamentaux en algorithmique, programmation C, architecture des ordinateurs et logique informatique.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3>Baccalauréat</h3>
+                        <p>Obtention du diplôme et orientation vers les études supérieures en informatique.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section class="section projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Projets & Expériences</h2>
+                <div class="section-line"></div>
+            </div>
+            <div id="react-projects"></div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section contact-section">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info-card">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>reghiba@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>/in/hiba</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <p>/hibareg</p>
+                        </div>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class="fas fa-user"></i> Nom complet</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder="votre@email.com">
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message"><i class="fas fa-comment"></i> Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Votre message..."></textarea>
+                        <span class="error-message"></span>
+                    </div>
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Envoyer
+                    </button>
+                </form>
+                <div id="form-success" class="form-success">
+                    <i class="fas fa-check-circle"></i> Message envoyé avec succès !
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script type="text/babel" src="js/components/Projects.jsx"></script>
+</body>
+</html>
