@@ -655,4 +655,67 @@ canvas:hover {
         grid-template-columns: 1fr;
         width: 100%;
     }
+
+    #react-projects > div {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding: 0 0.5rem;
+    }
+    
+    .project-card {
+        margin: 0 0.5rem;
+    }
+    
+    .project-card > div:first-child {
+        padding: 1rem !important;
+    }
+    
+    .project-card > div:first-child i {
+        font-size: 2rem !important;
+    }
+    
+    .project-card > div:last-child {
+        padding: 1rem !important;
+    }
+    
+    .project-card h3 {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.5rem !important;
+    }
+    
+    .project-card p {
+        font-size: 0.85rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .project-card .project-techs,
+    .project-card div[style*="flex-wrap"] {
+        gap: 0.4rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    .project-card .tech-badge,
+    .project-card span[style*="background: #ede9fe"] {
+        font-size: 0.7rem !important;
+        padding: 0.2rem 0.6rem !important;
+    }
+    
+    .project-card h4 {
+        font-size: 0.75rem !important;
+        margin-bottom: 0.4rem !important;
+    }
+    
+    .project-card ul {
+        padding-left: 0.8rem !important;
+    }
+    
+    .project-card li {
+        font-size: 0.8rem !important;
+        margin-bottom: 0.2rem !important;
+    }
+    
+    .project-card a {
+        font-size: 0.8rem !important;
+        margin-top: 0.3rem !important;
+    }
 }
