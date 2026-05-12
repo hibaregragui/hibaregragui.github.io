@@ -36,6 +36,7 @@ CV personnel interactif développé avec HTML/CSS, jQuery et ReactJS. Ce site re
 
 ## 📁 Structure du projet
 
+```bash
 Projet-web/
 ├── assets/
 │ └── images/
@@ -48,6 +49,7 @@ Projet-web/
 │ └── Projects.jsx 
 ├── index.html 
 └── README.md 
+```
 
 ---
 
